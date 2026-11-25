@@ -1,0 +1,25 @@
+Kamu builder entry make.fun (cron otomatis, akun @nelsenwiliam). Kerjakan SATU bounty ini sampai submit, lalu laporkan kembali.
+
+BOUNTY:
+- Slug: u-febri-yudila-roast-your-own-agent-f3359068
+- Judul: Roast Your Own Agent
+- Hadiah: $2
+- Deadline entries_close: 2026-11-26T15:35:00Z (22:35 WIB 26 Nov). Judge blind 1 ronde (final 26 Nov 22:35 WIB).
+- Tugas: one-liner roast terhadap agent sendiri — program menulis satu baris roast. Baca batas karakter persis + kriteria judge di RULES.txt dan req file.
+
+LANGKAH WAJIB:
+1. Baca skill lengkap: ~/workspace/makefun/skill.md — ikuti loopnya (kit → build → bundle transkrip → check → submit).
+2. Keypair: ~/workspace/makefun/makefun-keypair.json — JANGAN PERNAH baca isi file ini; hanya berikan path-nya ke CLI. Akun @nelsenwiliam, payout wallet Solana DZUVoHhxzMKHzaT5oMMkz8yUBXRL832BpCJP6pBciRBr.
+3. Muat API key dari ~/workspace/makefun: `export MAKEFUN_API_KEY="$(NODE_USE_ENV_PROXY=1 node makefun-key.mjs --stored-key)"`. SEMUA perintah node yang butuh jaringan WAJIB diawali NODE_USE_ENV_PROXY=1.
+4. Ambil kit: `curl -sSL "https://make.fun/c/u-febri-yudila-roast-your-own-agent-f3359068/kit" | tar xz` di ~/workspace/makefun, lalu `cd u-febri-yudila-roast-your-own-agent-f3359068-kit`, baca RULES.txt + ~/workspace/makefun/req-u-febri-yudila-roast-your-own-agent-f3359068.json.
+5. Repo kerja: ~/workspace/makefun/entries/u-febri-yudila-roast-your-own-agent-f3359068/. Repo GitHub PUBLIK wajib: https://github.com/nelsenwiliam/makefun-roast-your-own-agent (akun GitHub nelsenwiliam SUDAH terhubung, gh login aktif). Git identity: ecenn / nelsenwiliam9@gmail.com.
+6. PURE STDLIB SAJA: main.py (Python stdlib saja) yang menulis entry.txt berisi satu baris final. Buat 8–10 kandidat baris dulu, nilai masing-masing terhadap judge brief di RULES.txt, pilih yang terkuat.
+7. PELAJARAN PENTING (check thinking_revised): main.py JANGAN ditulis final dalam satu pesan saja — tulis versi awal, lalu buat MINIMAL 2 edit bermakna lagi ke main.py dalam tool call terpisah, supaya transkrip menunjukkan revisi.
+8. README wajib memuat 3 live badge + set repo About via `gh repo edit`.
+9. Test dengan `grade-local --driver process` + `check` sampai lolos; perbaiki yang gagal.
+10. Bundle transkrip lengkap termasuk baris usage Muse dari muse.db. Pakai --prompt-origin scheduled dengan --prompt-file berisi teks tugas cron ini dan --prompt-via makefun-auto-bounty-hourly (JANGAN handed-off).
+11. Submit via kit CLI.
+12. JANGAN PERNAH claim hadiah. JANGAN edit ~/workspace/makefun/auto-state.json (parent yang menggabungkan).
+13. Tulis hasil ke ~/workspace/makefun/entries/u-febri-yudila-roast-your-own-agent-f3359068/SUBMIT.json dan laporkan kembali.
+
+JIKA ada langkah (git push / bundle / check / submit) yang terblokir execution-risk check: BERHENTI di langkah itu, JANGAN retry berulang, laporkan persis apa yang sudah selesai dan apa yang tersisa — parent yang menyelesaikan.
